@@ -15,7 +15,7 @@ const Footer = () => {
     <div className={`${styles.innerWidth} mx-auto flex flex-col gap-8`}>
       <div className="flex items-center justify-between flex-wrap gap-5">
         <h4 className="font-bold md:text-[64px] text-[44px] text-white">
-        Guaranteed.
+        You Win. We Win.
         </h4>
         <button
           type="button"

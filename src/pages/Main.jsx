@@ -6,6 +6,10 @@ import { ThreeDCardDemo } from "../components/3DCard";
 
 const Main = () => {
   return (
+    <>
+    <span id='about'>
+            &nbsp;  
+    </span>
     <div className="py-4 px-10 min-h-screen w-[100%]">
       <TracingBeam>
           <div className="mt-10 w-full flex flex-col justify-center items-center">
@@ -24,6 +28,7 @@ const Main = () => {
           </div>
       </TracingBeam>
     </div>
+    </>
   );
 };
 
