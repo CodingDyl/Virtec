@@ -1,3 +1,5 @@
+import {twitter, link, facebook, insta} from '../assets'
+
 const navLinks = [
     {
         id: "#about",
@@ -26,9 +28,32 @@ const problems = [
     },
     {
         title: "HIRE AN AGENCY?",
-        content: "Don't have a marketingbudget of tens of thousands of euros? Then you might end up having your account managed by the intern of the assistants' assistant. Not exactly optimal.",
+        content: "Don't have a marketing budget of tens of thousands of euros? Then you might end up having your account managed by the intern of the assistants' assistant. Not exactly optimal.",
         image: "https://images.unsplash.com/photo-1613909207039-6b173b755cc1?q=80&w=1847&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
     },
-]
+];
 
-export {navLinks, problems};
+const socials = [
+    {
+      name: 'twitter',
+      url: twitter,
+      link: ''
+    },
+    {
+      name: 'linkedin',
+      url: link,
+      link: 'https://www.linkedin.com/organization-guest/company/pl-steel-services-profile?_l=en_US'
+    },
+    {
+      name: 'instagram',
+      url: insta,
+      link: ''
+    },
+    {
+      name: 'facebook',
+      url: facebook,
+      link: 'https://www.facebook.com/PLSteelServices2020'
+    },
+  ];
+
+export {navLinks, problems, socials};
