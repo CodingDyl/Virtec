@@ -2,3 +2,21 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+body {
+  overflow-x: hidden;
+}
+
+::-webkit-scrollbar {
+  width: 15px;
+  background: transparent;
+}
+
+::-webkit-scrollbar-track {
+  background: #152238;
+}
+
+::-webkit-scrollbar-thumb {
+  background: linear-gradient(#642bff, #ff22e6);
+  border-radius: 5rem;
+}

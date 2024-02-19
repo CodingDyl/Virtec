@@ -38,7 +38,7 @@ export function HeroHeading() {
         </Button>
         <Button borderRadius="1.75rem"
         className="bg-black/20 text-white hover:bg-black border-slate-800">
-          Contact Us
+          Yes, I want that!
         </Button>
       </div>
     </div>
