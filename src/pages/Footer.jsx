@@ -4,6 +4,7 @@ import { socials } from '../constants';
 import { footerVariants } from '../utils/motion';
 import { headset } from '../assets';
 import { Link } from 'react-router-dom';
+import { Button } from '../components/moving-border';
 
 const Footer = () => {
   return (
@@ -17,19 +18,17 @@ const Footer = () => {
         <h4 className="font-bold md:text-[64px] text-[44px] text-white">
         You Win. We Win.
         </h4>
-        <button
-          type="button"
-          className="flex items-center h-fit py-4 px-6 bg-[#25618b] rounded-[32px] gap-[12px]"
-        >
+        <Button borderRadius="1.75rem"
+        className="bg-black/20 text-white hover:bg-black border-slate-800 flex gap-2 justify-center px-2">
           <img
             src={headset}
             alt="headset"
             className="w-[24px] h-[24px] object-contain"
           />
           <span className="font-normal text-[16px] text-white">
-            OUR SERVICES
+            Our Services
           </span>
-        </button>
+        </Button>
       </div>
 
       <div className="flex flex-col">
