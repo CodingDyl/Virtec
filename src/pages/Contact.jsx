@@ -90,9 +90,6 @@ export function Contact() {
     <span id='contact'>
         &nbsp;  
     </span>
-    <div className='mb-10'>
-      <InfiniteMovingCardsMain />
-    </div>
     <motion.section
         className={`${styles.padding} max-w-7xl mx-auto relative z-0`}
     >
