@@ -4,6 +4,7 @@ import { styles } from '../styles';
 import { useRef, useState } from 'react';
 import emailjs from "@emailjs/browser";
 import { Button } from '../components/moving-border';
+import { InfiniteMovingCardsMain } from '../components/InfiniteMovingCardsMain';
 
 export function Contact() {
 
@@ -89,6 +90,9 @@ export function Contact() {
     <span id='contact'>
         &nbsp;  
     </span>
+    <div className='mb-10'>
+      <InfiniteMovingCardsMain />
+    </div>
     <motion.section
         className={`${styles.padding} max-w-7xl mx-auto relative z-0`}
     >

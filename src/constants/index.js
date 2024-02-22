@@ -37,22 +37,22 @@ const socials = [
     {
       name: 'twitter',
       url: twitter,
-      link: ''
+      link: 'https://youtu.be/dQw4w9WgXcQ'
     },
     {
       name: 'linkedin',
       url: link,
-      link: 'https://www.linkedin.com/organization-guest/company/pl-steel-services-profile?_l=en_US'
+      link: 'https://www.linkedin.com'
     },
     {
       name: 'instagram',
       url: insta,
-      link: ''
+      link: 'https://youtu.be/dQw4w9WgXcQ'
     },
     {
       name: 'facebook',
       url: facebook,
-      link: 'https://www.facebook.com/PLSteelServices2020'
+      link: 'https://www.facebook.com'
     },
   ];
 
