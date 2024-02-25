@@ -4,7 +4,6 @@ import { styles } from '../styles';
 import { useRef, useState } from 'react';
 import emailjs from "@emailjs/browser";
 import { Button } from '../components/moving-border';
-import { InfiniteMovingCardsMain } from '../components/InfiniteMovingCardsMain';
 
 export function Contact() {
 
