@@ -3,15 +3,15 @@ import {twitter, link, facebook, insta} from '../assets'
 const navLinks = [
     {
         id: "#about",
-        title: "About Us"
+        title: "About"
     },
     {
-        id: "#offer",
-        title: "What we offer"
+        id: "#why",
+        title: "Why Us"
     },
     {
         id: "#contact",
-        title: "Contact Us"
+        title: "Contact"
     },
 ];
 

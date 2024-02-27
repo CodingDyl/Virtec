@@ -1,8 +1,7 @@
-const defaultTheme = require("tailwindcss/defaultTheme");
-const colors = require("tailwindcss/colors");
-const {
-  default: flattenColorPalette,
-} = require("tailwindcss/lib/util/flattenColorPalette");
+import defaultTheme from "tailwindcss/defaultTheme";
+ 
+import colors from "tailwindcss/colors";
+import { default as flattenColorPalette } from "tailwindcss/lib/util/flattenColorPalette";
 
 /** @type {import('tailwindcss').Config} */
 export default {
@@ -25,16 +24,16 @@ export default {
         "bg-pattern": "url('/src/assets/bg_jasha_home.jpg')",
         "pattern-sm": "url('/src/assets/background_sm.jpg')"
       },
-    },
-  },
-  animation: {
-    scroll:
-      "scroll var(--animation-duration, 40s) var(--animation-direction, forwards) linear infinite",
-  },
-  keyframes: {
-    scroll: {
-      to: {
-        transform: "translate(calc(-50% - 0.5rem))",
+      animation: {
+        scroll:
+          "scroll var(--animation-duration, 40s) var(--animation-direction, forwards) linear infinite",
+      },
+      keyframes: {
+        scroll: {
+          to: {
+            transform: "translate(calc(-50% - 0.5rem))",
+          },
+        },
       },
     },
   },
