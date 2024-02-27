@@ -1,4 +1,4 @@
-import mainLogo from './logo.png'
+import mainLogo from './main_new_logo.png'
 import insta from './instagram.svg'
 import facebook from './facebook.svg'
 import twitter from './twitter.svg'
