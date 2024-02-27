@@ -52,7 +52,7 @@ const socials = [
     {
       name: 'facebook',
       url: facebook,
-      link: 'https://www.facebook.com/profile.php?id=61556979114996'
+      link: 'https://www.facebook.com/people/JM-Marketing/61556979114996/'
     },
   ];
 

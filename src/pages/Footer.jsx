@@ -34,9 +34,9 @@ const Footer = () => {
       <div className="flex flex-col">
         <div className="mb-[50px] h-[2px] bg-white opacity-10" />
         <div className="flex items-center justify-between flex-wrap gap-4">
-          <h4 className="font-extrabold text-[24px] text-white">JM Marketing</h4>
+          <h4 className="font-extrabold text-[24px] text-white">Virtec Marketing</h4>
           <p className="font-normal text-white opacity-50">
-            Copyright &copy; 2024 JM Marketing. All rights reserved
+            Copyright &copy; 2024 Virtec Marketing. All rights reserved
           </p>
           <div className="flex gap-4">
             {socials.map((social) => (
