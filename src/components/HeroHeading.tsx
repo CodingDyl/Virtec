@@ -9,6 +9,13 @@ export function HeroHeading() {
       text: "More",
     },
     {
+      text: "Clients.",
+      className: "text-blue-500 dark:text-blue-500",
+    },
+    {
+      text: "More",
+    },
+    {
       text: "Growth.",
       className: "text-blue-500 dark:text-blue-500",
     },
@@ -19,13 +26,6 @@ export function HeroHeading() {
       text: "Turnover.",
       className: "text-blue-500 dark:text-blue-500",
     },
-    {
-        text: "More",
-      },
-      {
-        text: "Clients.",
-        className: "text-blue-500 dark:text-blue-500",
-      },
   ];
   return (
     <div className="flex flex-col items-center justify-center h-auto relative z-20  ">

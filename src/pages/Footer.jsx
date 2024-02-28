@@ -18,6 +18,7 @@ const Footer = () => {
         <h4 className="font-bold md:text-[64px] text-[44px] text-white">
         You Win. We Win.
         </h4>
+        <a href="#about">
         <Button borderRadius="1.75rem"
         className="bg-black/20 text-white hover:bg-black border-slate-800 flex gap-2 justify-center px-2">
           <img
@@ -26,9 +27,10 @@ const Footer = () => {
             className="w-[24px] h-[24px] object-contain"
           />
           <span className="font-normal text-[16px] text-white">
-            Our Services
+            Our Solution
           </span>
         </Button>
+        </a>
       </div>
 
       <div className="flex flex-col">

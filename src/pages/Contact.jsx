@@ -21,6 +21,8 @@ export function Contact() {
     email: "",
     subject: "",
     message: "",
+    phone: "",
+    company: ""
   });
 
   const [loading, setLoading] = useState(false);
@@ -72,6 +74,8 @@ export function Contact() {
             name: "",
             email: "",
             subject: "",
+            phone: "",
+            company: "",
             message: "",
           });
         },
@@ -121,9 +125,28 @@ export function Contact() {
         />
       </SimpleGrid>
 
+      <SimpleGrid cols={{ base: 1, sm: 2 }} mt="md">
+        <TextInput
+          label="Company"
+          placeholder="Your company"
+          name="company"
+          value={form.company}
+          onChange={handleChange}
+          variant="filled"
+        />
+        <TextInput
+          label="Phone"
+          placeholder="Your phone number"
+          name="phone"
+          onChange={handleChange}
+          value={form.phone}
+          variant="filled"
+        />
+      </SimpleGrid>
+
       <TextInput
         label="Subject"
-        placeholder="Subject"
+        placeholder="What is your most important question?"
         value={form.subject}
         onChange={handleChange}
         mt="md"
