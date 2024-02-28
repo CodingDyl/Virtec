@@ -156,7 +156,7 @@ export function Contact() {
       <Textarea
         mt="md"
         label="Message"
-        placeholder="Your message"
+        placeholder="How can we help your business..."
         value={form.message}
         onChange={handleChange}
         maxRows={10}
