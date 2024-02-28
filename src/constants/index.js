@@ -42,7 +42,7 @@ const socials = [
     {
       name: 'linkedin',
       url: link,
-      link: 'https://www.linkedin.com'
+      link: 'https://www.linkedin.com/company/virtec-marketing/'
     },
     {
       name: 'instagram',
