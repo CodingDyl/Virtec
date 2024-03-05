@@ -1,4 +1,3 @@
-"use client";
 import React from "react";
 import { TypewriterEffectSmooth } from "./typewriter-effect";
 import { Button } from "./moving-border";

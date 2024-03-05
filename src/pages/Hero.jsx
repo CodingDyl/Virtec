@@ -1,4 +1,3 @@
-"use-client"
 import React from 'react'
 import { Boxes } from '../components/background-boxes'
 import { cn } from '../utils/cn'

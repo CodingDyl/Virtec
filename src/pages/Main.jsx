@@ -1,4 +1,3 @@
-"use-client";
 import React from "react";
 import { TracingBeam } from "../components/tracingbeam";
 import { problems } from "../constants";
