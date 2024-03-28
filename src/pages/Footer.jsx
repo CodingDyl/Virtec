@@ -20,7 +20,7 @@ const Footer = () => {
         </h4>
         <a href="#about">
         <Button borderRadius="1.75rem"
-        className="bg-black/20 text-white hover:bg-black border-slate-800 flex gap-2 justify-center px-2">
+        className="bg-black/60 text-white hover:bg-black border-slate-800 flex gap-2 justify-center px-2">
           <img
             src={headset}
             alt="headset"

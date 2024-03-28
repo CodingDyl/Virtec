@@ -15,8 +15,6 @@ const Content = () => {
               What makes us so different?
           </h1>
           <DifferentCards />
-
-          <InfiniteMovingCardsMain />
     </div>
     </>
   )
