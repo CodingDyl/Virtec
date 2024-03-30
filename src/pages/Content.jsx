@@ -12,7 +12,7 @@ const Content = () => {
     <div className='py-0 flex flex-col justify-center items-center'>
           <p className={`${styles.sectionSubText} text-center`}>You may ask...</p>
           <h1 className="text-xl md:text-3xl lg:text-5xl text-center font-bold py-10">
-              What makes us so different?
+              WHAT MAKES US SO DIFFERENT ?
           </h1>
           <DifferentCards />
     </div>

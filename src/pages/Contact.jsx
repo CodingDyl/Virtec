@@ -103,7 +103,7 @@ export function Contact() {
 
         <motion.div>
                 <p className={styles.sectionSubText}>Get In Touch</p>
-                <h2 className={styles.sectionHeadTextContact}>Contact Us.</h2>
+                <h2 className={styles.sectionHeadTextContact}>CONTACT US.</h2>
             </motion.div>
             <form ref={formRef} onSubmit={handleSubmit}>
       <SimpleGrid cols={{ base: 1, sm: 2 }} mt="xl">

@@ -13,7 +13,7 @@ const Main = () => {
     <div className="py-4 px-10 min-h-screen w-[100%]">
       <div className="flex flex-col justify-center items-center text-center w-full">
             <p className={styles.sectionSubText}>We both know that</p>
-            <h2 className={styles.sectionHeadText}>Marketing Is Important...</h2>
+            <h2 className={styles.sectionHeadText}>MARKETING IS IMPORTANT...</h2>
             <p className="mt-4 mb-4 text-secondary text-[17px] max-w-3xl leading-[30px]">...but there are already 101 things on your to-do list. 
 And they are all important too!</p>
       </div>
