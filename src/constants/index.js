@@ -10,10 +10,21 @@ const navLinks = [
         title: "Why Us"
     },
     {
+      id:"/blog",
+      title: "Blog"
+    },
+    {
         id: "#contact",
         title: "Contact"
     },
 ];
+
+const navLinksBlog = [
+  {
+    id: "/",
+    title: "Go Back"
+  },
+]
 
 const problems = [
     {
@@ -56,4 +67,4 @@ const socials = [
     },
   ];
 
-export {navLinks, problems, socials};
+export {navLinks, problems, socials, navLinksBlog};

@@ -1,27 +1,22 @@
-import { BrowserRouter } from "react-router-dom"
-import Hero from './pages/Hero'
-import Main from "./pages/Main"
-import Content from "./pages/Content"
-import Footer from "./pages/Footer"
-import { Contact } from "./pages/Contact"
-import { MantineProvider } from "@mantine/core"
-import '@mantine/core/styles.css';
+import { BrowserRouter, Route, Routes, useLocation } from "react-router-dom";
+import { useEffect } from "react";
+import MainLayout from "./layout/MainLayout";
+import { MantineProvider } from "@mantine/core";
+import "@mantine/core/styles.css";
+import BlogLayout from "./layout/BlogLayout";
 
 function App() {
-
   return (
     <MantineProvider>
-    <BrowserRouter>
-    <div className="z-0 bg-[#152238] text-white">
-     <Hero />
-     <Main />
-     <Content />
-     <Contact />
-     <Footer />
-    </div>
-    </BrowserRouter>
+      <BrowserRouter>
+          <Routes>
+            <Route path="/" element={<MainLayout />} />
+            <Route path="/blog" element={<BlogLayout />} /> 
+            {/* <Route path="/post/:slug" element={<FullBlogPost />} />  */}
+          </Routes> 
+      </BrowserRouter>
     </MantineProvider>
-  )
+  );
 }
 
-export default App
+export default App;
