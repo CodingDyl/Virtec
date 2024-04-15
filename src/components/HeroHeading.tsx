@@ -28,7 +28,7 @@ export function HeroHeading() {
   ];
   return (
     <div className="flex flex-col items-center justify-center h-auto relative z-20  ">
-      <p className="text-neutral-200 text-xs sm:text-base md:text-lg  ">
+      <p className="text-neutral-200 text-md sm:text-md md:text-2xl  ">
         Do what you do best, we'll handle the marketing.
       </p>
       <TypewriterEffectSmooth words={words} />
