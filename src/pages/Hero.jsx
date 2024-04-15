@@ -29,11 +29,12 @@ export function TypewriterEffectSmoothDemo() {
 const Hero = () => {
   return (
     <>
-    <div className="min-h-screen relative w-full overflow-hidden bg-slate-900 flex flex-col items-center justify-center rounded-lg">
-      <div className="absolute inset-0 w-full h-full bg-slate-900 z-20 [mask-image:radial-gradient(transparent,white)] pointer-events-none" />
+    <div className="min-h-screen relative w-full overflow-hidden bg-slate-900">
+      <div className="absolute inset-0 w-full h-full flex flex-col justify-center items-center" >
       <Navbar />
       <Boxes />
       <HeroHeading />
+      </div>
       </div>
     </>
   )
