@@ -5,7 +5,7 @@ import NavbarBlogs from '../components/blog-components/NavbarBlogs'
 
 const BlogLayout = () => {
   return (
-    <div className="z-0 bg-[#152238] text-white min-h-screen">\
+    <div className="z-0 bg-[#152238] text-white min-h-screen">
         <NavbarBlogs />
         <Blog />
         <Footer />
