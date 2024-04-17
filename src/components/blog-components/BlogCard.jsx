@@ -12,6 +12,7 @@ export function BlogCard({post}) {
     }
 
   return (
+    <Link to={`/blog/${post.slug.current}`}>
     <div className="w-80 mx-auto">
       <FollowerPointerCard
         title={
@@ -38,7 +39,7 @@ export function BlogCard({post}) {
             </h2>
             <div className="flex flex-row justify-between items-center mt-10">
               <span className="text-sm text-gray-500">{new Date(post.publishedAt).toDateString()}</span>
-              <Link to={`/blog/${post.slug.current}`}><div className="relative z-10 px-6 py-2 bg-black text-white font-bold rounded-xl block text-xs">
+              <Link to={`/blog/${post.slug.current}`} className="hover:cursor-none"><div className="relative z-10 px-6 py-2 bg-black text-white font-bold rounded-xl block text-xs">
                 Read More
               </div></Link>
             </div>
@@ -46,6 +47,7 @@ export function BlogCard({post}) {
         </div>
       </FollowerPointerCard>
     </div>
+    </Link>
   );
 }
 

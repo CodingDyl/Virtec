@@ -79,10 +79,6 @@ const FullBlogPost = () => {
           <h4 className='text-white'>Dylan Petzer</h4>
           </div>
       </div>
-
-      <div className="mt-8 flex justify-center">
-        <Link to="/blog"><Button className='bg-[rgba(0,0,0,0.8)] !important'>Back to Blog</Button></Link>
-      </div>
     </div>
     </div>
   )
