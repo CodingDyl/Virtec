@@ -5,6 +5,7 @@ import { PortableText } from '@portabletext/react'
 import Loading from './Loading'
 import { urlForImage } from '../../sanity/lib/image'
 import { Button } from '../components/moving-border'
+import { MdArrowBack } from 'react-icons/md'
 
 const FullBlogPost = () => {
     const { slug } = useParams();
@@ -47,6 +48,13 @@ const FullBlogPost = () => {
   return (
     <div className='h-full w-full bg-slate-900'>
         <div className="p-6 max-w-4xl mx-auto bg-white">
+      <div className='p-2'>
+        <Link to="/blog" className='hover:cursor-pointer'>
+       <MdArrowBack size={48}
+    strokeWidth={2}
+    color={'black'} />
+    </Link>
+      </div>
       <h1 className="text-4xl font-bold mb-4">{post.title}</h1>
       <p className="text-white-500 mb-4">Published on: {new Date(post.publishedAt).toDateString()}</p>
 
