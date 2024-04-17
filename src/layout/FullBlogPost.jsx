@@ -47,7 +47,7 @@ const FullBlogPost = () => {
 
   return (
     <div className='h-full w-full bg-slate-900'>
-        <div className="p-6 max-w-4xl mx-auto bg-white">
+        <div className="p-6 max-w-3xl mx-auto bg-white">
       <div className='p-2'>
         <Link to="/blog" className='hover:cursor-pointer'>
        <MdArrowBack size={48}
@@ -70,7 +70,7 @@ const FullBlogPost = () => {
 
       <div className="mt-6 text-white-600 flex flex-col justify-start gap-4">
         <p>Written by:</p>
-         <div className='flex flex-row justify-start gap-4 items-center p-4 bg-[rgba(0,0,0,0.4)] rounded-xl w-[25%]'>
+         <div className='flex flex-row justify-start gap-4 items-center p-4 bg-[rgba(0,0,0,0.4)] rounded-xl w-[50%] md:w-[25%]'>
           <img
             src="https://images.unsplash.com/photo-1633332755192-727a05c4013d?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8OHx8YXZhdGFyfGVufDB8fDB8fHww"
             alt="DP"
