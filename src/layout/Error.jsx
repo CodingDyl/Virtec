@@ -18,7 +18,7 @@ const Error = () => {
         }}
         className="mt-8 bg-gradient-to-br from-slate-300 to-slate-500 py-4 bg-clip-text text-center text-4xl font-medium tracking-tight text-transparent md:text-7xl"
       >
-        <strong>404 Error:</strong> <br /> Oops... Look like you stumbled on the wrong page!
+        <strong>404 Error:</strong> <br /> Oops... Doesn't look like you on the right page!
       </motion.h1 >
       <motion.div initial={{ opacity: 0.5, y: 100 }}
         whileInView={{ opacity: 1, y: 0 }}
