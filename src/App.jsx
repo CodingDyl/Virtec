@@ -1,4 +1,4 @@
-import { BrowserRouter, Route, Routes, useLocation } from "react-router-dom";
+import { BrowserRouter, Route, Routes } from "react-router-dom";
 import { useEffect, useLayoutEffect } from "react";
 import MainLayout from "./layout/MainLayout";
 import Error from "./layout/Error";
@@ -6,23 +6,24 @@ import { MantineProvider } from "@mantine/core";
 import "@mantine/core/styles.css";
 import BlogLayout from "./layout/BlogLayout";
 import FullBlogPost from "./layout/FullBlogPost";
+import ReactGA from "react-ga";
+
+const TRACKING_ID = "G-51CKGMHRR9";
+ReactGA.initialize(TRACKING_ID);
 
 function App() {
-  function ScrollToTop() {
-    const location = useLocation();
 
-    useLayoutEffect(() => {
-        // Scroll to the top of the page
-        window.scrollTo(0, 0);
-    }, [location]);
-
-    return null; // This component doesn't render anything
-}
+useEffect(() => {
+  const trackPageView = (location) => {
+    ReactGA.set({ page: location.pathname });
+    ReactGA.pageview(location.pathname);
+  };
+})
   return (
     <MantineProvider>
       <BrowserRouter>
-        <ScrollToTop />
           <Routes>
+            <Route render={({ location }) => trackPageView(location)} />
             <Route path="/" element={<MainLayout />} />
             <Route path="/blog" element={<BlogLayout />} /> 
             <Route path="/blog/:slug" element={<FullBlogPost />} /> 
