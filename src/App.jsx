@@ -6,7 +6,7 @@ import { MantineProvider } from "@mantine/core";
 import "@mantine/core/styles.css";
 import BlogLayout from "./layout/BlogLayout";
 import FullBlogPost from "./layout/FullBlogPost";
-import ReactGA from "react-ga";
+import ReactGA from "react-ga4";
 
 const TRACKING_ID = "G-51CKGMHRR9";
 ReactGA.initialize(TRACKING_ID);
@@ -26,7 +26,9 @@ function TrackingRoutes() {
   useEffect(() => {
     // Track page view whenever location changes
     ReactGA.set({ page: window.location.pathname });
-    ReactGA.pageview(window.location.pathname);
+    ReactGA.send('page_view', { 
+      page_path: window.location.pathname
+    });
   }, []);
 
   return (
