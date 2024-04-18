@@ -1,4 +1,4 @@
-import { BrowserRouter, Route, Routes, useLocation } from "react-router-dom";
+import { BrowserRouter, Route, Routes } from "react-router-dom";
 import { useEffect, useLayoutEffect } from "react";
 import MainLayout from "./layout/MainLayout";
 import Error from "./layout/Error";
@@ -22,13 +22,12 @@ function App() {
 }
 
 function TrackingRoutes() {
-  const location = useLocation();
 
   useEffect(() => {
     // Track page view whenever location changes
-    ReactGA.set({ page: location.pathname });
-    ReactGA.pageview(location.pathname);
-  }, [location]);
+    ReactGA.set({ page: window.location.pathname });
+    ReactGA.pageview(window.location.pathname);
+  }, []);
 
   return (
     <Routes>
