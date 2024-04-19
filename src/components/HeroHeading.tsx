@@ -27,7 +27,7 @@ export function HeroHeading() {
     },
   ];
   return (
-    <div className="flex flex-col items-center justify-center h-auto relative z-20  ">
+    <div className="flex flex-col items-center justify-center h-auto relative z-20 mx-auto ">
       <p className="text-neutral-200 text-md sm:text-md md:text-2xl  ">
         Do what you do best, we'll handle the marketing.
       </p>

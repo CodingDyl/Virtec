@@ -10,7 +10,7 @@ const Navbar = () => {
     const [active, setActive] = useState("");
     const [toggle, setToggle] = useState(false);
   return (
-    <nav className={`${styles.paddingX} w-full flex items-center py-5 absolute top-0 z-20 bg-black/20 md:bg-transparent`}>
+    <nav className={`${styles.paddingX} w-full flex items-center py-5 absolute top-0 z-10 bg-black/20 md:bg-transparent`}>
       <div className="w-full flex justify-between items-center max-w-7xl mx-auto">
         <Link to="/" className="flex items-center gap-2" onClick={() => { setActive(""); window.scrollTo(0, 0); }}>
           <img src={mainLogo} alt="logo" className="h-20 object-cover border-0" />
@@ -36,7 +36,7 @@ const Navbar = () => {
                   onClick={() => setToggle(!toggle)}
               />
           )}
-          <div className={`${!toggle ? 'hidden' : 'flex'} p-6 bg-[rgba(0,0,0,0.7)] absolute top-20 right-0 mx-4 my-2 min-w-[140px] z-10 rounded-xl`}>
+          <div className={`${!toggle ? 'hidden' : 'flex'} p-6 bg-[rgba(0,0,0,0.7)] absolute top-20 right-0 mx-4 my-2 min-w-[140px] z-1000 bg-slate-900 border-white border-2 rounded-xl`}>
             <ul className="list-none flex justify-end items-start flex-col gap-4">
               {navLinks.map((link) => (
                 <li key={link.id} className={`${active === link.title ? "text-tertiary" : "text-secondary"} font-poppins font-medium cursor-pointer text-[16px]`} onClick={() => { setToggle(!toggle); setActive(link.title); }}>
