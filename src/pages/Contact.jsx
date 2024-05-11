@@ -168,7 +168,7 @@ export function Contact() {
 
       <Group justify="center" mt="xl">
       <Button borderRadius="1.75rem"
-        className="bg-black text-white hover:bg-slate-800 border-slate-800">
+        className="bg-black text-white hover:bg-slate-800 border-slate-800 hover:border-white">
           { loading ? "Sending..." : "Send" }
         </Button>
       </Group>

@@ -16,15 +16,14 @@ body {
 }
 
 ::-webkit-scrollbar {
-  width: 15px;
-  background: transparent;
+  display: none;
 }
 
 ::-webkit-scrollbar-track {
-  background: #152238;
+  background: transparent;
 }
 
 ::-webkit-scrollbar-thumb {
-  background: linear-gradient(#642bff, #ff22e6);
+  background: transparent;
   border-radius: 5rem;
 }
