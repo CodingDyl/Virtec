@@ -36,7 +36,7 @@ export function HeroHeading() {
       {/* <TypewriterEffectSmooth words={words} /> */}
       <div className="mb-5 px-10">
         <h1 className={`${styles.heroHeadText} text-white text-center`}>
-          More <span className="text-blue-500">Clients.</span> More <span className="text-blue-500">Growth.</span> <br /> <span className="text-blue-500">Guaranteed.</span>
+          More <span className="text-blue-500">Growth.</span> More <span className="text-blue-500">Clients.</span> <br /> <span className="text-blue-500">Guaranteed.</span>
         </h1>
       </div>
       <Group grow align="center" gap="md" className="w-full md:w-[80%] flex-col md:flex-row">
