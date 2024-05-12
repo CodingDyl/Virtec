@@ -4,29 +4,29 @@ import { Button, Group } from "@mantine/core";
 import { Link } from "react-router-dom";
 import { styles } from "../styles";
 export function HeroHeading() {
-  const words = [
-    {
-      text: "More",
-    },
-    {
-      text: "Clients.",
-      className: "text-blue-500 dark:text-blue-500",
-    },
-    {
-      text: "More",
-    },
-    {
-      text: "Growth.",
-      className: "text-blue-500 dark:text-blue-500",
-    },
-    {
-      text: "More",
-    },
-    {
-      text: "Turnover.",
-      className: "text-blue-500 dark:text-blue-500",
-    },
-  ];
+  // const words = [
+  //   {
+  //     text: "More",
+  //   },
+  //   {
+  //     text: "Clients.",
+  //     className: "text-blue-500 dark:text-blue-500",
+  //   },
+  //   {
+  //     text: "More",
+  //   },
+  //   {
+  //     text: "Growth.",
+  //     className: "text-blue-500 dark:text-blue-500",
+  //   },
+  //   {
+  //     text: "More",
+  //   },
+  //   {
+  //     text: "Turnover.",
+  //     className: "text-blue-500 dark:text-blue-500",
+  //   },
+  // ];
   return (
     <>
     <div className="flex flex-col items-center justify-center h-auto relative z-20 mx-auto ">
