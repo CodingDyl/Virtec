@@ -6,7 +6,7 @@ import Footer from '../pages/Footer'
 const ThankYouLeadLayout = () => {
   return (
     <div className='z-0 bg-[#152238] text-white'>
-    <div className='pb-32'>
+    <div className='pb-32 md:pb-20'>
         <NavbarBlogs />
     </div>
     <ThankYouPageLead />
