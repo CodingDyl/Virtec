@@ -3,7 +3,7 @@ import { motion } from 'framer-motion';
 import { styles } from '../styles';
 import { useRef, useState } from 'react';
 import emailjs from "@emailjs/browser";
-import { Button } from '../components/moving-border';
+import { Button } from '@mantine/core';
 
 export function Contact() {
 
@@ -167,8 +167,8 @@ export function Contact() {
       />
 
       <Group justify="center" mt="xl">
-      <Button borderRadius="1.75rem"
-        className="bg-black text-white hover:bg-slate-800 border-slate-800 hover:border-white">
+      <Button size='xl'
+        className="rounded-lg border border-white-100 hover:bg-white/5 hover:translate-y-[-4px] focus:ring-2 focus:ring-blue-500  w-[50%] relative z-10 mt-4  bg-neutral-950 placeholder:text-neutral-700">
           { loading ? "Sending..." : "Send" }
         </Button>
       </Group>

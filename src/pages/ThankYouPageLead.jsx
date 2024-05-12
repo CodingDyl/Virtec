@@ -177,7 +177,7 @@ const ThankYouPageLead = () => {
           <Group justify="center" mt="xl">
             <Button
               borderRadius="1.75rem"
-              className="rounded-lg border border-white-100 hover:bg-slate-900 focus:ring-2 focus:ring-blue-500  w-[80%] relative z-10 mt-4  bg-neutral-950 placeholder:text-neutral-700"
+              className="rounded-lg border border-white-100 hover:bg-white/5 hover:translate-y-[-4px] focus:ring-2 focus:ring-blue-500  w-[80%] relative z-10 mt-4  bg-neutral-950 placeholder:text-neutral-700"
             >
               {loading ? "Sending..." : "Send"}
             </Button>

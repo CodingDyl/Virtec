@@ -1,7 +1,6 @@
 import React from 'react'
 import { DifferentCards } from '../components/DifferentCards'
 import { styles } from '../styles'
-import { InfiniteMovingCardsMain } from '../components/InfiniteMovingCardsMain'
 
 const Content = () => {
   return (
