@@ -7,6 +7,8 @@ import "@mantine/core/styles.css";
 import BlogLayout from "./layout/BlogLayout";
 import FullBlogPost from "./layout/FullBlogPost";
 import ReactGA from "react-ga4";
+import LandingPageLayout from "./layout/LandingPageLayout";
+import ThankYouLeadLayout from "./layout/ThankYouLeadLayout";
 
 const TRACKING_ID = "G-51CKGMHRR9";
 ReactGA.initialize(TRACKING_ID);
@@ -36,6 +38,8 @@ function TrackingRoutes() {
       <Route path="/" element={<MainLayout />} />
       <Route path="/blog" element={<BlogLayout />} />
       <Route path="/blog/:slug" element={<FullBlogPost />} />
+      <Route path="/offer" element={<LandingPageLayout />} />
+      <Route path="/thank-you" element={<ThankYouLeadLayout />} />
       <Route path="*" element={<Error />} />
     </Routes>
   );
