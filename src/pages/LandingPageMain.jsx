@@ -1,5 +1,5 @@
 "use client";
-import React from "react";
+import React, { useState } from "react";
 import { BackgroundBeams } from "../components/ui/background-beams";
 import { styles } from "../styles";
 import { useForm } from "@mantine/form";
@@ -7,8 +7,11 @@ import { Box, Button, Group, TextInput } from "@mantine/core";
 import { IconArrowRight } from "@tabler/icons-react";
 import Footer from "./Footer";
 import NavbarBlogs from "../components/blog-components/NavbarBlogs";
+import { Link, useNavigate } from "react-router-dom";
 
 const LandingPageMain = () => {
+    const [loading, setLoading] = useState(false);
+    const navigate = useNavigate();
   const form = useForm({
     mode: "uncontrolled",
     initialValues: {
@@ -19,6 +22,12 @@ const LandingPageMain = () => {
       email: (value) => (/^\S+@\S+$/.test(value) ? null : "Invalid email"),
     },
   });
+
+  const handleSubmit = (values) => {
+    console.log(values);
+
+    navigate("/thank-you")
+  }
   return (
     <div className="z-20 min-h-screen w-full bg-neutral-950 relative flex flex-col items-center justify-center antialiased">
         <div className="pb-32 md:pb-20"></div>
@@ -50,7 +59,7 @@ const LandingPageMain = () => {
           mx="auto"
           className="relative z-10 text-left w-full p-10 border-white border-2"
         >
-          <form onSubmit={form.onSubmit((values) => console.log(values))}>
+          <form onSubmit={form.onSubmit(handleSubmit)}>
             <TextInput
               withAsterisk
               label="Email"

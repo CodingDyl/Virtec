@@ -1,6 +1,5 @@
 import React from "react";
-import { Button } from '../components/moving-border';
-import { TextInput, Textarea, SimpleGrid, Group } from '@mantine/core';
+import { TextInput, Textarea, SimpleGrid, Group, Button } from '@mantine/core';
 import { useRef, useState } from 'react';
 import emailjs from "@emailjs/browser";
 
@@ -178,7 +177,7 @@ const ThankYouPageLead = () => {
           <Group justify="center" mt="xl">
             <Button
               borderRadius="1.75rem"
-              className="bg-black text-white hover:bg-slate-800 border-slate-800 hover:border-white"
+              className="rounded-lg border border-white-100 hover:bg-slate-900 focus:ring-2 focus:ring-blue-500  w-[80%] relative z-10 mt-4  bg-neutral-950 placeholder:text-neutral-700"
             >
               {loading ? "Sending..." : "Send"}
             </Button>
