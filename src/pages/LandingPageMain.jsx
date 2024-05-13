@@ -26,6 +26,7 @@ const LandingPageMain = () => {
   const handleSubmit = (values) => {
     console.log(values);
 
+    window.scrollTo(0, 0);
     navigate("/free-guide/thank-you")
   }
   return (

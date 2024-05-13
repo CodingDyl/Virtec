@@ -39,7 +39,7 @@ export function HeroHeading() {
           More <span className="text-blue-500">Growth.</span> More <span className="text-blue-500">Clients.</span> <br /> Guaranteed.
         </h1>
       </div>
-      <Group grow align="center" gap="md" className="w-full md:w-[50%] flex-col md:flex-row">
+      <Group grow align="center" gap="md" className="w-full md:w-[70%] flex-col md:flex-row">
         <a href="#about">
         <Button  size="xl" fullWidth
         className="hidden md:block bg-black text-white border-blue-500 hover:bg-white/5 text-sm md:text-xl hover:translate-y-2 hover:border-white rounded-xl">

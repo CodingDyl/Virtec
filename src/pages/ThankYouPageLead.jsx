@@ -105,11 +105,13 @@ const ThankYouPageLead = () => {
           <h1 className="text-xl md:text-4xl lg:text-5xl text-center p-5">
             Want To Know What We Can Do For You?
           </h1>
+          <div className="w-[80%] text-center mx-auto">
           <p className="text-md md:text-2xl">
             Would you like to know what we could do for you? Fill out the form
-            and we will get back to you. <br/> No obligations, no annoying high
+            and we will get back to you. <br /> No obligations, no annoying high
             pressure sales tactics. We both have better things to do.
           </p>
+          </div>
         </div>
 
         <div className='bg-black/20 border-2 border-blue-500 rounded-lg p-10 bord mt-10 text-left'>
