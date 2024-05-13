@@ -112,7 +112,7 @@ const ThankYouPageLead = () => {
           </p>
         </div>
 
-        <div className='bg-black/20 border-2 border-white/[0.2] rounded-lg p-10 bord mt-10 text-left'>
+        <div className='bg-black/20 border-2 border-blue-500 rounded-lg p-10 bord mt-10 text-left'>
         <form ref={formRef} onSubmit={handleSubmit}>
           <SimpleGrid cols={{ base: 1, sm: 2 }} mt="xl">
             <TextInput
@@ -177,7 +177,7 @@ const ThankYouPageLead = () => {
           <Group justify="center" mt="xl">
             <Button
               borderRadius="1.75rem"
-              className="rounded-lg border border-white-100 hover:bg-white/5 hover:translate-y-[-4px] focus:ring-2 focus:ring-blue-500  w-[80%] relative z-10 mt-4  bg-neutral-950 placeholder:text-neutral-700"
+              className="rounded-lg border border-blue-500 hover:border-white hover:bg-white/5 hover:translate-y-[-4px] focus:ring-2 focus:ring-blue-500  w-[80%] relative z-10 mt-4  bg-neutral-950 placeholder:text-neutral-700"
             >
               {loading ? "Sending..." : "Send"}
             </Button>

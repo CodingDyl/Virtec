@@ -26,7 +26,7 @@ const LandingPageMain = () => {
   const handleSubmit = (values) => {
     console.log(values);
 
-    navigate("/thank-you")
+    navigate("/free-guide/thank-you")
   }
   return (
     <div className="z-20 min-h-screen w-full bg-neutral-950 relative flex flex-col items-center justify-center antialiased">
@@ -69,7 +69,7 @@ const LandingPageMain = () => {
             />
             <Group justify="center" mt="md">
               <Button
-                className="rounded-lg border border-white-100 hover:bg-white/5 hover:translate-y-[-4px] focus:ring-2 focus:ring-blue-500  w-[80%] relative z-10 mt-4  bg-neutral-950 placeholder:text-neutral-700"
+                className="rounded-lg border border-blue-500 hover:border-white hover:bg-white/5 hover:translate-y-[-4px] focus:ring-2 focus:ring-blue-500  w-[80%] relative z-10 mt-4  bg-neutral-950 placeholder:text-neutral-700"
                 type="submit"
                 rightSection={<IconArrowRight size={14} />}
               >

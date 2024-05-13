@@ -6,8 +6,10 @@ import NavbarBlogs from '../components/blog-components/NavbarBlogs'
 const BlogLayout = () => {
   return (
     <div className="z-0 bg-[#152238] text-white min-h-screen flex flex-col">      
+        <div className='py-10 md:py-5'>
         <NavbarBlogs />
-        <div className='flex-1 mb-4 mt-2'>
+        </div>
+        <div className='flex-1 mb-4'>
         <Blog />
         </div>
         <Footer />

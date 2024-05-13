@@ -30,7 +30,7 @@ export function HeroHeading() {
   return (
     <>
     <div className="flex flex-col items-center justify-center h-auto relative z-20 mx-auto ">
-      <p className="text-neutral-200 text-md sm:text-md md:text-2xl mb-5  ">
+      <p className="hidden md:block text-neutral-200 text-md sm:text-md md:text-2xl mb-5  ">
         Do what you do best, we'll handle the marketing.
       </p>
       {/* <TypewriterEffectSmooth words={words} /> */}
@@ -39,16 +39,16 @@ export function HeroHeading() {
           More <span className="text-blue-500">Growth.</span> More <span className="text-blue-500">Clients.</span> <br /> Guaranteed.
         </h1>
       </div>
-      <Group grow align="center" gap="md" className="w-full md:w-[80%] flex-col md:flex-row">
+      <Group grow align="center" gap="md" className="w-full md:w-[50%] flex-col md:flex-row">
         <a href="#about">
         <Button  size="xl" fullWidth
-        className="bg-black text-white hover:bg-white/5 text-sm md:text-xl hover:translate-y-2 hover:border-white rounded-xl">
+        className="hidden md:block bg-black text-white border-blue-500 hover:bg-white/5 text-sm md:text-xl hover:translate-y-2 hover:border-white rounded-xl">
           Learn More
         </Button>
         </a>
         <a href="#contact">
         <Button size="xl" fullWidth
-        className="bg-black text-white text-wrap hover:bg-white/5 text-sm md:text-xl hover:translate-y-2 hover:border-white rounded-xl" >
+        className="bg-black text-white text-wrap border-blue-500 hover:bg-white/5 text-sm md:text-xl hover:translate-y-2 hover:border-white rounded-xl" >
           Yes, I Want That!
         </Button>
         </a>

@@ -39,7 +39,7 @@ function TrackingRoutes() {
       <Route path="/blog" element={<BlogLayout />} />
       <Route path="/blog/:slug" element={<FullBlogPost />} />
       <Route path="/free-guide" element={<LandingPageLayout />} />
-      <Route path="/thank-you" element={<ThankYouLeadLayout />} />
+      <Route path="/free-guide/thank-you" element={<ThankYouLeadLayout />} />
       <Route path="*" element={<Error />} />
     </Routes>
   );

@@ -8,7 +8,7 @@ const styles = {
     paddings: 'sm:p-16 xs:p-8 px-6 py-12',
   
     heroHeadText:
-      "font-black text-primary lg:text-[80px] sm:text-[60px] xs:text-[50px] text-[40px] lg:leading-[98px] mt-2",
+      "font-black text-primary md:text-[75px] lg:text-[80px] sm:text-[60px] xs:text-[50px] text-[40px] lg:leading-[98px] mt-2",
     heroSubText:
       "text-secondary font-medium lg:text-[30px] sm:text-[26px] xs:text-[20px] text-[16px] lg:leading-[40px]",
   
