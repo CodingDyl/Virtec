@@ -18,7 +18,9 @@ const ThankYouApplicationPage = () => {
         </div>
 
         {/* Blog Post Tray */}
-        <div className='mb-20 md:mb-32'><BlogPost /></div>
+        <div className='mb-20 md:mb-32'>
+            <BlogPost />
+        </div>
         
         </div>
     </>

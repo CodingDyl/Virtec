@@ -2,9 +2,11 @@ import React from "react";
 import { TextInput, Textarea, SimpleGrid, Group, Button } from '@mantine/core';
 import { useRef, useState } from 'react';
 import emailjs from "@emailjs/browser";
+import { useNavigate } from "react-router-dom";
 
 const ThankYouPageLead = () => {
     const formRef = useRef();
+    const navigate = useNavigate();
 
 
     const validate = {
@@ -18,8 +20,6 @@ const ThankYouPageLead = () => {
       email: "",
       subject: "",
       message: "",
-      phone: "",
-      company: ""
     });
   
     const [loading, setLoading] = useState(false);
@@ -55,9 +55,9 @@ const ThankYouPageLead = () => {
           'template_89r4q4d',
           {
             from_name: form.name,
-            to_name: "Jasha Consulting",
+            to_name: "Virtec Marketing",
             from_email: form.email,
-            to_email: "shaun@jasha.co.za",
+            to_email: "info@virtecmarketing.com",
             message: form.message,
           },
           'i_IFgvR2F8kYMIPmq'
@@ -66,19 +66,23 @@ const ThankYouPageLead = () => {
           () => {
             setLoading(false);
             alert("Thank you. I will get back to you as soon as possible.");
+
+            window.scrollTo(0, 0);
+            navigate("/application/thank-you")
   
             setForm({
               name: "",
               email: "",
               subject: "",
-              phone: "",
-              company: "",
               message: "",
             });
           },
           (error) => {
             setLoading(false);
             console.error(error);
+
+            window.scrollTo(0, 0);
+            navigate("/application/thank-you")
   
             alert("Ahh, something went wrong. Please try again.");
           }
@@ -135,7 +139,7 @@ const ThankYouPageLead = () => {
             />
           </SimpleGrid>
 
-          <SimpleGrid cols={{ base: 1, sm: 2 }} mt="md">
+          {/* <SimpleGrid cols={{ base: 1, sm: 2 }} mt="md">
             <TextInput
               label="Company"
               placeholder="Your company"
@@ -152,7 +156,7 @@ const ThankYouPageLead = () => {
               value={form.phone}
               variant="filled"
             />
-          </SimpleGrid>
+          </SimpleGrid> */}
 
           <TextInput
             label="Subject"
@@ -178,7 +182,7 @@ const ThankYouPageLead = () => {
 
           <Group justify="center" mt="xl">
             <Button
-              borderRadius="1.75rem"
+              type="submit"
               className="rounded-lg border border-blue-500 hover:border-white hover:bg-white/5 hover:translate-y-[-4px] focus:ring-2 focus:ring-blue-500  w-[80%] relative z-10 mt-4  bg-neutral-950 placeholder:text-neutral-700"
             >
               {loading ? "Sending..." : "Send"}
