@@ -4,7 +4,8 @@ import { socials } from '../constants';
 import { footerVariants } from '../utils/motion';
 import { headset } from '../assets';
 import { Link } from 'react-router-dom';
-import { Button } from '../components/moving-border';
+import { Button } from '@mantine/core';
+import { IconChartAreaLineFilled } from '@tabler/icons-react';
 
 const Footer = () => {
   return (
@@ -19,14 +20,9 @@ const Footer = () => {
         You Win. We Win.
         </h4>
         <a href="#about">
-        <Button borderRadius="1.75rem"
-        className="bg-black border-blue-500 text-white flex gap-2 justify-center px-2 hover:border-white hover:bg-white/5">
-          <img
-            src={headset}
-            alt="headset"
-            className="w-[24px] h-[24px] object-contain"
-          />
-          <span className="font-normal text-[16px] text-white">
+        <Button size='xl' leftSection={<IconChartAreaLineFilled size={32} strokeWidth={2} color={'#f1f1f1'}/>}
+        className="bg-black rounded-full border-blue-500 text-white flex gap-6 justify-center hover:border-white hover:bg-white/5">
+          <span className="font-bold text-[16px] text-white">
             Our Solution
           </span>
         </Button>

@@ -2,7 +2,7 @@ import React from 'react'
 import { motion } from "framer-motion";
 import { LampContainer } from "../components/ui/lamp";
 import { Link } from 'react-router-dom';
-import { Button } from '../components/moving-border';
+import { Button } from '@mantine/core';
 
 const Error = () => {
   return (
@@ -28,7 +28,8 @@ const Error = () => {
           ease: "easeInOut",
         }} className='mt-5 md:mt-10'>
       <Link to="/">
-        <Button>Go Back</Button>
+      <Button size='xl' fullWidth
+        className="bg-black rounded-xl hover:translate-y-[-4px] border-blue-500 text-white flex gap-2 justify-center px-6 hover:border-white hover:bg-white/5">Go Back</Button>
         </Link>
         </motion.div>
     </LampContainer>

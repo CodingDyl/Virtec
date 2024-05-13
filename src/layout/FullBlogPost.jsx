@@ -4,7 +4,6 @@ import { useParams, Link } from 'react-router-dom'
 import { PortableText } from '@portabletext/react'
 import Loading from './Loading'
 import { urlForImage } from '../../sanity/lib/image'
-import { Button } from '../components/moving-border'
 import { MdArrowBack } from 'react-icons/md'
 
 const FullBlogPost = () => {
