@@ -36,10 +36,10 @@ const Navbar = () => {
                   onClick={() => setToggle(!toggle)}
               />
           )}
-          <div className={`${!toggle ? 'hidden' : 'flex'} p-6 bg-[rgba(0,0,0,0.7)] absolute top-20 right-0 mx-4 my-2 min-w-[140px] z-1000 bg-slate-900 border-white border-2 rounded-xl`}>
+          <div className={`${!toggle ? 'hidden' : 'flex'} p-6 bg-[rgba(0,0,0,0.7)] z-10 absolute top-20 right-0 mx-4 my-2 min-w-[140px] bg-black border-blue-500 border-2 rounded-xl`}>
             <ul className="list-none flex justify-end items-start flex-col gap-4">
               {navLinks.map((link) => (
-                <li key={link.id} className={`${active === link.title ? "text-tertiary" : "text-secondary"} font-poppins font-medium cursor-pointer text-[16px]`} onClick={() => { setToggle(!toggle); setActive(link.title); }}>
+                <li key={link.id} className={`${active === link.title ? "text-blue-500" : "text-white-100"} font-poppins font-medium cursor-pointer text-[16px]`} onClick={() => { setToggle(!toggle); setActive(link.title); }}>
                   {link.title == "Blog" ? <Link to="/blog">{link.title}</Link> : <a href={`${link.id}`}>
                 {link.title}
               </a>}
