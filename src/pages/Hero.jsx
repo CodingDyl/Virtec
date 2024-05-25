@@ -1,30 +1,7 @@
 import React from 'react'
 import { Boxes } from '../components/background-boxes'
-import { cn } from '../utils/cn'
-import { TypewriterEffectSmooth } from '../components/typewriter-effect'
 import { HeroHeading } from '../components/HeroHeading'
 import Navbar from '../components/Navbar'
-
-export function TypewriterEffectSmoothDemo() {
-    const words = [
-      {
-        text: "Build",
-      },
-      {
-        text: "awesome",
-      },
-      {
-        text: "apps",
-      },
-      {
-        text: "with",
-      },
-      {
-        text: "Aceternity.",
-        className: "text-blue-500 dark:text-blue-500",
-      },
-    ];
-}
 
 const Hero = () => {
   return (

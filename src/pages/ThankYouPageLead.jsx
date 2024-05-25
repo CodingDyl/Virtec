@@ -139,25 +139,6 @@ const ThankYouPageLead = () => {
             />
           </SimpleGrid>
 
-          {/* <SimpleGrid cols={{ base: 1, sm: 2 }} mt="md">
-            <TextInput
-              label="Company"
-              placeholder="Your company"
-              name="company"
-              value={form.company}
-              onChange={handleChange}
-              variant="filled"
-            />
-            <TextInput
-              label="Phone"
-              placeholder="Your phone number"
-              name="phone"
-              onChange={handleChange}
-              value={form.phone}
-              variant="filled"
-            />
-          </SimpleGrid> */}
-
           <TextInput
             label="Subject"
             placeholder="What is your most important question?"

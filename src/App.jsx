@@ -1,5 +1,5 @@
 import { BrowserRouter, Route, Routes } from "react-router-dom";
-import { useEffect, useLayoutEffect } from "react";
+import { useEffect } from "react";
 import MainLayout from "./layout/MainLayout";
 import Error from "./layout/Error";
 import { MantineProvider } from "@mantine/core";

@@ -1,23 +1,5 @@
 {
     "rewrites": [
         {"source" : "/(.*)", "destination": "/"}
-    ],
-    "routes": [
-        {
-            "src": "/",
-            "dest": "/"
-        },
-        {
-            "src": "/free-guide",
-            "dest": "/"
-        },
-        {
-            "src": "/free-guide/thank-you",
-            "dest": "/"
-        },
-        {
-            "src": "/application/thank-you",
-            "dest": "/"
-        }
     ]
 }

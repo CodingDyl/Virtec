@@ -2,7 +2,6 @@ import { motion } from 'framer-motion';
 import { styles } from '../styles';
 import { socials } from '../constants';
 import { footerVariants } from '../utils/motion';
-import { headset } from '../assets';
 import { Link } from 'react-router-dom';
 import { Button } from '@mantine/core';
 import { IconChartAreaLineFilled } from '@tabler/icons-react';
