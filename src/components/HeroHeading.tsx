@@ -5,8 +5,8 @@ import { styles } from "../styles";
 export function HeroHeading() {
   return (
     <>
-    <div className="flex flex-col items-center justify-center h-auto relative z-5 mx-auto ">
-      <p className="hidden md:block text-neutral-200 text-md sm:text-md md:text-2xl mb-5  ">
+    <div className="flex flex-col items-center justify-center relative z-5 mx-auto ">
+      <p className="hidden md:block text-neutral-200 text-md md:text-2xl mb-5  ">
         Do what you do best, we'll handle the marketing.
       </p>
       {/* <TypewriterEffectSmooth words={words} /> */}
@@ -18,13 +18,13 @@ export function HeroHeading() {
       <Group grow align="center" gap="md" className="w-full md:w-[70%] flex-col md:flex-row">
         <a href="#about">
         <Button  size="xl" fullWidth
-        className="hidden md:block bg-black text-white border-blue-500 hover:bg-white/5 text-sm md:text-xl hover:translate-y-2 hover:border-white rounded-xl">
+        className={styles.virtecBtn}>
           Learn More
         </Button>
         </a>
         <a href="#contact">
         <Button size="xl" fullWidth
-        className="bg-black text-white text-wrap border-blue-500 hover:bg-white/5 text-sm md:text-xl hover:translate-y-2 hover:border-white rounded-xl" >
+        className={styles.virtecBtn} >
           Yes, I Want That!
         </Button>
         </a>

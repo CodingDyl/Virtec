@@ -6,6 +6,8 @@ const styles = {
     paddingY: "sm:py-16 py-6",
     padding: "sm:px-16 px-6 sm:py-16 py-10",
     paddings: 'sm:p-16 xs:p-8 px-6 py-12',
+
+    virtecBtn: "hidden md:block bg-black text-white border-blue-500 hover:bg-white/5 text-sm md:text-xl hover:translate-y-2 hover:border-white rounded-xl",
   
     heroHeadText:
       "font-black text-primary md:text-[75px] lg:text-[80px] sm:text-[60px] xs:text-[50px] text-[40px] lg:leading-[98px] mt-2",
