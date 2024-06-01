@@ -1,6 +1,7 @@
 import React from "react";
 import { Button, Group } from "@mantine/core";
 import { styles } from "../styles";
+import { Highlight } from "./ui/HeroHighlight";
 
 export function HeroHeading() {
   return (
@@ -10,10 +11,11 @@ export function HeroHeading() {
         Do what you do best, we'll handle the marketing.
       </p>
       {/* <TypewriterEffectSmooth words={words} /> */}
-      <div className="mb-5 px-10">
+      <div className="mb-5 px-10 flex flex-col justify-center items-center text-center gap-2">
         <h1 className={`${styles.heroHeadText} text-white text-center`}>
-          More <span className="text-blue-500">Growth.</span> More <span className="text-blue-500">Clients.</span> <br /> Guaranteed.
+          More Growth. More Clients.
         </h1>
+        <h1 className={`${styles.heroHeadText} text-white text-center`}><Highlight>Guaranteed.</Highlight></h1>
       </div>
       <Group grow align="center" gap="md" className="w-full md:w-[70%] flex-col md:flex-row">
         <a href="#about">
