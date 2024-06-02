@@ -45,8 +45,8 @@ const ThankYouPageLead = () => {
         validate.subject(form.subject)
       ) {
         // If any validation fails, display error message and prevent email sending
-        setLoading(false);
-        const title = "Missing Info"
+      setLoading(false);
+      const title = "Missing Info"
       const message = "Please fill out all the required fields correctly."
       const color = "#2563eb"
       setAlert({title, message, color});
@@ -81,7 +81,9 @@ const ThankYouPageLead = () => {
           setAlert({title, message, color});
 
             window.scrollTo(0, 0);
-            navigate("/application/thank-you")
+            setTimeout(() => {
+              setAlert(null);
+              navigate("/application/thank-you")
   
             setForm({
               name: "",
@@ -89,9 +91,6 @@ const ThankYouPageLead = () => {
               subject: "",
               message: "",
             });
-
-            setTimeout(() => {
-              setAlert(null);
             }, 3000);
           },
           (error) => {

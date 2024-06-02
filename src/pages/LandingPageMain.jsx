@@ -8,9 +8,11 @@ import { IconArrowRight } from "@tabler/icons-react";
 import Footer from "./Footer";
 import NavbarBlogs from "../components/blog-components/NavbarBlogs";
 import { Link, useNavigate } from "react-router-dom";
+import AlertComp from "../components/AlertComp";
 
 const LandingPageMain = () => {
     const [loading, setLoading] = useState(false);
+    const [alert, setAlert] = useState(null);
     const navigate = useNavigate();
   const form = useForm({
     mode: "uncontrolled",
@@ -26,10 +28,20 @@ const LandingPageMain = () => {
   const handleSubmit = (values) => {
     console.log(values);
 
+    const title = "Success!"
+    const message = "Your free guide is coming your way!"
+    const color = "teal"
+    setAlert({title, message, color})
+
     window.scrollTo(0, 0);
-    navigate("/free-guide/thank-you")
+    setTimeout(() => {
+      setAlert(null);
+      navigate("/free-guide/thank-you")
+    }, 3000);
   }
   return (
+    <>
+    {alert && <AlertComp title={alert.title} msg={alert.message} col={alert.color} />}
     <div className="z-20 min-h-screen w-full bg-neutral-950 relative flex flex-col items-center justify-center antialiased">
         <div className="pb-32 md:pb-20"></div>
       <NavbarBlogs />
@@ -85,6 +97,7 @@ const LandingPageMain = () => {
         <Footer />
       </div>
     </div>
+    </>
   );
 };
 
