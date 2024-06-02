@@ -3,6 +3,7 @@ import { TextInput, Textarea, SimpleGrid, Group, Button } from '@mantine/core';
 import { useRef, useState } from 'react';
 import emailjs from "@emailjs/browser";
 import { useNavigate } from "react-router-dom";
+import AlertComp from "../components/AlertComp";
 
 const ThankYouPageLead = () => {
     const formRef = useRef();
@@ -23,6 +24,7 @@ const ThankYouPageLead = () => {
     });
   
     const [loading, setLoading] = useState(false);
+    const [alert, setAlert] = useState(null);
   
     const handleChange = (e) => {
       const { target } = e;
@@ -44,7 +46,14 @@ const ThankYouPageLead = () => {
       ) {
         // If any validation fails, display error message and prevent email sending
         setLoading(false);
-        alert("Please fill out all the required fields correctly.");
+        const title = "Missing Info"
+      const message = "Please fill out all the required fields correctly."
+      const color = "#2563eb"
+      setAlert({title, message, color});
+
+      setTimeout(() => {
+        setAlert(null);
+      }, 3000);
         return;
       }
   
@@ -65,7 +74,10 @@ const ThankYouPageLead = () => {
         .then(
           () => {
             setLoading(false);
-            alert("Thank you. I will get back to you as soon as possible.");
+            const title = "Success!"
+          const message = "Thank you. I will get back to you as soon as possible.";
+          const color = "teal";
+          setAlert({title, message, color});
 
             window.scrollTo(0, 0);
             navigate("/application/thank-you")
@@ -76,6 +88,10 @@ const ThankYouPageLead = () => {
               subject: "",
               message: "",
             });
+
+            setTimeout(() => {
+              setAlert(null);
+            }, 3000);
           },
           (error) => {
             setLoading(false);
@@ -84,12 +100,20 @@ const ThankYouPageLead = () => {
             window.scrollTo(0, 0);
             navigate("/application/thank-you")
   
-            alert("Ahh, something went wrong. Please try again.");
+            const title = "Error!"
+          const message = "Ahh, something went wrong. Please try again.";
+          const color = "red";
+          setAlert({title, message, color});
+
+          setTimeout(() => {
+            setAlert(null);
+          }, 3000);
           }
         );
     };
   return (
     <>
+    {alert && <AlertComp title={alert.title} msg={alert.message} col={alert.color} />}
       <div className="py-10 w-full px-[5%] lg:px-[15%] flex flex-col justify-start items-center mx-auto text-center">
         <div className="flex flex-col gap-2 text-center">
           <h1 className="text-2xl md:text-6xl lg:text-7xl text-center font-bold py-10">

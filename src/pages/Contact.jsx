@@ -4,6 +4,7 @@ import { styles } from '../styles';
 import { useRef, useState } from 'react';
 import emailjs from "@emailjs/browser";
 import { Button } from '@mantine/core';
+import AlertComp from '../components/AlertComp';
 
 export function Contact() {
 
@@ -26,6 +27,7 @@ export function Contact() {
   });
 
   const [loading, setLoading] = useState(false);
+  const [alert, setAlert] = useState(null);
 
   const handleChange = (e) => {
     const { target } = e;
@@ -47,7 +49,14 @@ export function Contact() {
     ) {
       // If any validation fails, display error message and prevent email sending
       setLoading(false);
-      alert("Please fill out all the required fields correctly.");
+      const title = "Missing Info"
+      const message = "Please fill out all the required fields correctly."
+      const color = "#2563eb"
+      setAlert({title, message, color});
+
+      setTimeout(() => {
+        setAlert(null);
+      }, 3000);
       return;
     }
 
@@ -58,9 +67,9 @@ export function Contact() {
         'template_89r4q4d',
         {
           from_name: form.name,
-          to_name: "Jasha Consulting",
+          to_name: "Virtec Marketing",
           from_email: form.email,
-          to_email: "shaun@jasha.co.za",
+          to_email: "2610dylan@gmail.com",
           message: form.message,
         },
         'i_IFgvR2F8kYMIPmq'
@@ -68,7 +77,10 @@ export function Contact() {
       .then(
         () => {
           setLoading(false);
-          alert("Thank you. I will get back to you as soon as possible.");
+          const title = "Success!"
+          const message = "Thank you. I will get back to you as soon as possible.";
+          const color = "teal";
+          setAlert({title, message, color});
 
           setForm({
             name: "",
@@ -78,29 +90,40 @@ export function Contact() {
             company: "",
             message: "",
           });
+
+          setTimeout(() => {
+            setAlert(null);
+          }, 3000);
         },
         (error) => {
           setLoading(false);
           console.error(error);
+          const title = "Error!"
+          const message = "Ahh, something went wrong. Please try again.";
+          const color = "red";
+          setAlert({title, message, color});
 
-          alert("Ahh, something went wrong. Please try again.");
+          setTimeout(() => {
+            setAlert(null);
+          }, 3000);
         }
       );
   };
 
   return (
     <>
+    {alert && <AlertComp title={alert.title} msg={alert.message} col={alert.color} />}
     <span id='contact'>
         &nbsp;  
     </span>
     <motion.section
         className={`${styles.padding} max-w-7xl mx-auto relative z-0`}
     >
+      
 
         
 
         <div className='bg-black/20 border-2 border-white/[0.2] rounded-lg p-10 bord'>
-
         <motion.div>
                 <p className={styles.sectionSubText}>Get In Touch</p>
                 <h2 className={styles.sectionHeadTextContact}>CONTACT US.</h2>
@@ -168,7 +191,7 @@ export function Contact() {
 
       <Group justify="center" mt="xl">
       <Button size='md'
-        className="rounded-full border border-blue-500 hover:border-white hover:bg-white/5 hover:translate-y-[-4px] focus:ring-2 focus:ring-blue-500  w-[50%] md:w-[25%] relative z-10 mt-4  bg-neutral-950 placeholder:text-neutral-700">
+        className="rounded-full border border-blue-500 hover:border-white hover:bg-white/5 hover:translate-y-[-4px] focus:ring-2 focus:ring-blue-500  w-[50%] md:w-[25%] relative z-10 mt-4  bg-neutral-950 placeholder:text-neutral-700" type='submit'>
           { loading ? "Sending..." : "Send" }
         </Button>
       </Group>
