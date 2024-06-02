@@ -27,7 +27,7 @@ export function BlogPost() {
     }
 
   return (
-    <div className="grid md:auto-rows-[18rem] grid-cols-1 md:grid-cols-3 gap-4 max-w-7xl mx-auto mb-10">
+    <div className="grid grid-cols-1 md:grid-cols-3 gap-4 max-w-7xl mx-auto mb-10">
       {posts.map((post) => (
         <BlogCard
           post={post}
