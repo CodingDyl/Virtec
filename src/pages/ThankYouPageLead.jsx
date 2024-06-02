@@ -68,6 +68,7 @@ const ThankYouPageLead = () => {
             from_email: form.email,
             to_email: "info@virtecmarketing.com",
             message: form.message,
+            subject: form.subject,
           },
           'i_IFgvR2F8kYMIPmq'
         )

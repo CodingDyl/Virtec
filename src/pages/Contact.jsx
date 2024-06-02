@@ -67,10 +67,13 @@ export function Contact() {
         'template_89r4q4d',
         {
           from_name: form.name,
-          to_name: "Virtec Marketing",
+          to_name: "Dylan",
           from_email: form.email,
           to_email: "2610dylan@gmail.com",
           message: form.message,
+          company: form.company,
+          phone: form.phone,
+          subject: form.subject
         },
         'i_IFgvR2F8kYMIPmq'
       )
