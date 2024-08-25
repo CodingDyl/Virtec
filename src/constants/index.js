@@ -2,20 +2,16 @@ import {twitter, link, facebook, insta} from '../assets'
 
 const navLinks = [
     {
-        id: "#about",
-        title: "About"
+      id: "/",
+      title: "Home"
     },
     {
-        id: "#why",
-        title: "Why Us"
+        id: "/contact",
+        title: "Free Marketing Analysis"
     },
     {
       id:"/blog",
       title: "Blog"
-    },
-    {
-        id: "#contact",
-        title: "Contact"
     },
 ];
 

@@ -122,10 +122,18 @@ export function Contact() {
     <motion.section
         className={`${styles.padding} max-w-7xl mx-auto relative z-0`}
     >
-      
 
-        
+      <div className={`mt-10 flex flex-col gap-8 mb-10`}>
+        <h2 className={`${styles.sectionHeadText} text-center`}>Receive A Free Marketing Analysis:</h2>
 
+        <div className={`${styles.sectionSubText} flex flex-col gap-6 text-left px-[10%]`}>
+          <p>Would you like to know what we can do for you?</p>
+          <p>Fill out the form below and we will contact you within 48 hours for a free analysis.</p>
+          <p>No costs, no obligations, no annoying sales pitch. Guaranteed.</p>
+        </div>
+
+      </div>
+    
         <div className='bg-black/20 border-2 border-white/[0.2] rounded-lg p-10 bord'>
         <motion.div>
                 <p className={styles.sectionSubText}>Get In Touch</p>

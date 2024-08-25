@@ -18,14 +18,14 @@ const Footer = () => {
         <h4 className="font-bold md:text-[64px] text-[44px] text-white">
         You Win. We Win.
         </h4>
-        <a href="#about">
+        <Link to="/contact">
         <Button size='xl' leftSection={<IconChartAreaLineFilled size={32} strokeWidth={2} color={'#f1f1f1'}/>}
         className="bg-black rounded-full border-blue-500 text-white flex gap-6 justify-center hover:border-white hover:bg-white/5">
           <span className="font-bold text-[16px] text-white">
-            Our Solution
+            Contact Us
           </span>
         </Button>
-        </a>
+        </Link>
       </div>
 
       <div className="flex flex-col">

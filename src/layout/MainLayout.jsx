@@ -11,7 +11,6 @@ const MainLayout = () => {
             <Background />
             <Main />
             <Content />
-            <Contact />
             <Footer />
     </div>
   )

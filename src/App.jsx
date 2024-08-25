@@ -10,6 +10,7 @@ import ReactGA from "react-ga4";
 import LandingPageLayout from "./layout/LandingPageLayout";
 import ThankYouLeadLayout from "./layout/ThankYouLeadLayout";
 import ApplicationLayout from "./layout/ApplicationLayout";
+import ContactLayout from "./layout/ContactLayout";
 
 const TRACKING_ID = "G-51CKGMHRR9";
 ReactGA.initialize(TRACKING_ID);
@@ -37,6 +38,7 @@ function TrackingRoutes() {
   return (
     <Routes>
       <Route path="/" element={<MainLayout />} />
+      <Route path="/contact" element={<ContactLayout />} />
       <Route path="/blog" element={<BlogLayout />} />
       <Route path="/blog/:slug" element={<FullBlogPost />} />
       <Route path="/free-guide" element={<LandingPageLayout />} />

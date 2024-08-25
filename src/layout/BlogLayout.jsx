@@ -1,13 +1,13 @@
 import React from 'react'
 import Blog from '../pages/blog-pages/Blog'
 import Footer from '../pages/Footer'
-import NavbarBlogs from '../components/blog-components/NavbarBlogs'
+import Navbar from '../components/Navbar'
 
 const BlogLayout = () => {
   return (
     <div className="z-0 bg-[#152238] text-white min-h-screen flex flex-col">      
         <div className='py-10 md:py-5'>
-        <NavbarBlogs />
+        <Navbar />
         </div>
         <div className='flex-1 mb-4'>
         <Blog />
