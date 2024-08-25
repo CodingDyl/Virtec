@@ -13,7 +13,7 @@ export function BlogCard({post}) {
 
   return (
     <Link to={`/blog/${post.slug.current}`}>
-    <div className="w-80 mx-auto">
+    <div className="w-80 h-full mx-auto">
       <FollowerPointerCard
         title={
           <TitleComponent
@@ -32,10 +32,10 @@ export function BlogCard({post}) {
             />
           </div>
           <div className=" p-4">
-            <h2 className="font-bold my-4 text-lg text-zinc-700">
+            <h2 className="font-bold my-4 text-lg text-zinc-700 overflow-hidden text-ellipsis line-clamp-2">
               {post.title}
             </h2>
-            <h2 className="font-normal my-4 text-sm text-zinc-500">
+            <h2 className="font-normal my-4 text-sm text-zinc-500 overflow-hidden text-ellipsis line-clamp-4">
               {post.description}
             </h2>
             <div className="flex flex-row justify-between items-center mt-10">

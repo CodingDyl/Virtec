@@ -15,3 +15,5 @@ In order to run the project for Sanity locally you need to use the following com
 
 - NPM install
 - NPM
+
+To run sanity DB locally: npx sanity dev
