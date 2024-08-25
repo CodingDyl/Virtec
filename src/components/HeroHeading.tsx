@@ -2,6 +2,7 @@ import React from "react";
 import { Button, Group } from "@mantine/core";
 import { styles } from "../styles";
 import { Highlight } from "./ui/HeroHighlight";
+import { Link } from "react-router-dom";
 
 export function HeroHeading() {
   return (
@@ -24,12 +25,12 @@ export function HeroHeading() {
           Learn More
         </Button>
         </a>
-        <a href="#contact">
+        <Link to="/contact">
         <Button size="xl" fullWidth
         className={styles.virtecBtn} >
           Yes, I Want That!
         </Button>
-        </a>
+        </Link>
         
       </Group>
     </div>
