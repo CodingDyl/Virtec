@@ -18,7 +18,7 @@ const Navbar = () => {
     const handleScroll = () => {
       if (window.scrollY > 0) {
         setBgColor('bg-virtec border-2 border-white/[0.2]');
-        setNavSize('h-auto w-[80%] md:w-[30%] top-2 p-[10px 10%]');
+        setNavSize('h-auto w-[80%] md:w-[40%] top-2 p-[10px 10%]');
         setNavRadius('rounded-2xl');
         setHideLogo('flex md:hidden')
       } else {
