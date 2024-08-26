@@ -3,6 +3,7 @@ const styles = {
     interWidth: 'lg:w-[80%] w-[100%]',
 
     paddingX: "sm:px-16 px-6",
+    paddingNavX: "sm:px-16 px-6 mx-auto",
     paddingY: "sm:py-16 py-6",
     padding: "sm:px-16 px-6 sm:py-16 py-10",
     paddings: 'sm:p-16 xs:p-8 px-6 py-12',

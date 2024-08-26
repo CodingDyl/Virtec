@@ -18,6 +18,7 @@ export default {
         primary: "#000000",
         secondary: "#808080",
         tertiary: "#C0C0C0",
+        virtec: "#152238",
         "black-100": "#100d25",
         "black-200": "#090325",
         "white-100": "#f3f3f3",

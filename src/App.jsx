@@ -33,6 +33,8 @@ function TrackingRoutes() {
     ReactGA.send('page_view', { 
       page_path: window.location.pathname
     });
+
+    window.scrollTo(0, 0);
   }, []);
 
   return (

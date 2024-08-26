@@ -4,7 +4,7 @@ import { CardBody, CardContainer, CardItem } from "./3d-card";
 
 export function ThreeDCardDemo({title, content, image}) {
   return (
-    <CardContainer className="inter-var">
+    <CardContainer className="inter-var z-40">
       <CardBody className="relative group/card  hover:shadow-2xl hover:shadow-emerald-500/[0.1] bg-black/20 border-white/[0.2] w-auto sm:w-[30rem] h-auto rounded-xl p-6 border  ">
         <CardItem
           translateZ="50"
