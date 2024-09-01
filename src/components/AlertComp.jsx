@@ -5,7 +5,7 @@ import { IconInfoCircle } from '@tabler/icons-react'
 const AlertComp = ({msg, col, title}) => {
     const icon = <IconInfoCircle />
   return (
-    <div className="fixed top-2 w-full z-30 !important">
+    <div className="fixed top-2 w-full z-50 !important">
     <Alert variant="filled" color={col} title={title} icon={icon} className='mx-auto w-[70%]'>
       <p className='text-white'>{msg}</p>
     </Alert>

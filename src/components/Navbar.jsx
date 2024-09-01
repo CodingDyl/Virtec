@@ -47,7 +47,7 @@ const Navbar = () => {
     }, [location]);
 
   return (
-    <nav className={`${styles.paddingNavX} fixed z-50 left-1/2 transform -translate-x-1/2 transition-all duration-300 ${bgColor} ${navSize} ${navRadius}`}>
+    <nav className={`${styles.paddingNavX} fixed z-40 left-1/2 transform -translate-x-1/2 transition-all duration-300 ${bgColor} ${navSize} ${navRadius}`}>
       <div className="h-10 md:h-20 w-full flex justify-around items-center max-w-7xl mx-auto">
         <Link to="/" className={`${hideLogo} items-center gap-2`} onClick={() => { setActive(""); window.scrollTo(0, 0); }}>
           <img src={mainLogo} alt="logo" className="h-4 xs:h-2 md:h-7 w-full object-cover border-0" />
