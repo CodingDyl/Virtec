@@ -159,7 +159,7 @@ export function Contact() {
         />
       </SimpleGrid>
 
-      <SimpleGrid cols={{ base: 1, sm: 2 }} mt="md">
+      <SimpleGrid cols={{ base: 1, sm: 2 }} mt="md" className='mb-5'>
         <TextInput
           label="Company"
           placeholder="Your company"
@@ -179,8 +179,32 @@ export function Contact() {
       </SimpleGrid>
 
       <TextInput
-        label="Subject"
+        label="Additional Questions"
         placeholder="What is your most important question?"
+        value={form.subject}
+        onChange={handleChange}
+        mt="md"
+        name="subject"
+        variant="filled"
+      />
+      <TextInput
+        placeholder="How did you find us?"
+        value={form.subject}
+        onChange={handleChange}
+        mt="md"
+        name="subject"
+        variant="filled"
+      />
+      <TextInput
+        placeholder="How much are you spending on advertising a month?"
+        value={form.subject}
+        onChange={handleChange}
+        mt="md"
+        name="subject"
+        variant="filled"
+      />
+      <TextInput
+        placeholder="What's your website?"
         value={form.subject}
         onChange={handleChange}
         mt="md"
@@ -189,7 +213,6 @@ export function Contact() {
       />
       <Textarea
         mt="md"
-        label="Message"
         placeholder="How can we help your business..."
         value={form.message}
         onChange={handleChange}
